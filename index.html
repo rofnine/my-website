@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITNA Portfolio</title>
+    <meta name="description" content="빛나(Bitna)의 마케팅 포트폴리오 웹사이트입니다.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home">BITNA</a>
+        </div>
+        <div class="right-menu">
+            <nav class="nav-links">
+                <a href="#home" data-i18n="nav_home">HOME</a>
+                <a href="#about" data-i18n="nav_about">ABOUT</a>
+                <a href="#portfolio" data-i18n="nav_portfolio">PORTFOLIO</a>
+                <a href="#contact" data-i18n="nav_contact">CONTACT</a>
+            </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn active" data-lang="ko">KO</button>
+                <button class="lang-btn" data-lang="zh">简体</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section with Parallax -->
+        <section id="home" class="parallax-section section-home">
+            <div class="overlay"></div>
+            <div class="content fade-in">
+                <h1>BITNA</h1>
+                <p data-i18n="home_role">Marketing Expert & Visual Storyteller</p>
+                <p class="subtitle" data-i18n="home_subtitle">Inspiring connections through strategic marketing.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="about-grid fade-in">
+                    <div class="profile-placeholder">
+                        <img src="assets/profile.jpg" alt="빛나 프로필 사진" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <h2 data-i18n="about_title">About</h2>
+                        <p data-i18n="about_p1">안녕하세요,<br>다양한 콘텐츠 플랫폼을 통해 브랜드와 사람을 연결하는 마케터 <strong>빛나</strong>입니다.</p>
+                        <p data-i18n="about_p2">네이버 블로그를 중심으로 맛집과 생활 정보를 전달하며,<br>실제 경험을 바탕으로 신뢰도 높은 콘텐츠를 제작하고 있습니다.</p>
+
+
+                        <p data-i18n="about_p4">단순한 홍보를 넘어,<br>사람들이 공감하고 기억할 수 있는 콘텐츠를 만드는 것을 목표로 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section with Parallax -->
+        <section id="portfolio" class="parallax-section section-portfolio">
+            <div class="overlay"></div>
+            <div class="content fade-in">
+                <h2 data-i18n="portfolio_title">PORTFOLIO</h2>
+                <div class="album-gallery">
+                    <!-- YouTube Album -->
+                    <a href="https://youtube.com/channel/UCWoeEIxSUqy7-MSb45lcRIA?si=bQdAQ1sCOxC59BZl" target="_blank"
+                        class="album-card">
+                        <div class="album-art-container">
+                            <div class="vinyl-record vinyl-yt">
+                                <div class="inner-label"></div>
+                            </div>
+                            <div class="album-cover cover-yt">
+                                <svg class="brand-logo" viewBox="0 0 24 24" fill="#ffffff" width="60" height="60">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="album-info">
+                            <h3 data-i18n="pf_youtube">YouTube</h3>
+                            <p data-i18n="pf_yt_desc">빛나의 마케팅 전략과 비주얼 스토리텔링 채널</p>
+                        </div>
+                    </a>
+
+                    <!-- Instagram Album -->
+                    <a href="https://www.instagram.com/sit.mode/" target="_blank" class="album-card">
+                        <div class="album-art-container">
+                            <div class="vinyl-record vinyl-ig">
+                                <div class="inner-label"></div>
+                            </div>
+                            <div class="album-cover cover-ig">
+                                <svg class="brand-logo" viewBox="0 0 24 24" fill="#ffffff" width="60" height="60">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="album-info">
+                            <h3 data-i18n="pf_instagram">Instagram</h3>
+                            <p data-i18n="pf_ig_desc">다양한 콘텐츠와 소통이 있는 인스타그램 채널</p>
+                        </div>
+                    </a>
+
+                    <!-- Naver Blog Album -->
+                    <a href="https://blog.naver.com/rof0411" target="_blank" class="album-card">
+                        <div class="album-art-container">
+                            <div class="vinyl-record vinyl-nb">
+                                <div class="inner-label"></div>
+                            </div>
+                            <div class="album-cover cover-nb">
+                                <div class="naver-logo">N</div>
+                            </div>
+                        </div>
+                        <div class="album-info">
+                            <h3 data-i18n="pf_naverblog">Naver Blog</h3>
+                            <p data-i18n="pf_nb_desc">실제 경험을 바탕으로 한 신뢰도 높은 리뷰 콘텐츠</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section id="highlights" class="content-section" style="background:#fff;">
+            <div class="container fade-in">
+                <div class="contact-header text-center">
+                    <h2 data-i18n="works_title">HIGHLIGHTS</h2>
+                    <p data-i18n="works_subdesc">각 채널별 가장 뜨거웠던 주요 콘텐츠를 확인해보세요.</p>
+                </div>
+
+                <div class="works-grid">
+                    <!-- YouTube Highlight -->
+                    <a href="https://youtube.com/shorts/z1hk8MqQsUs?si=_ZKS9kGboOKTjdYg" target="_blank"
+                        class="work-card">
+                        <div class="work-thumb thumb-yt" style="padding: 0; border: none; background: transparent;">
+                            <img src="assets/yt.jpg" alt="YouTube Highlight">
+                        </div>
+                        <div class="work-info">
+                            <h3 data-i18n="work_yt_title">유튜브 주요 영상</h3>
+                            <p data-i18n="work_yt_desc">높은 조회수로 공감을 얻은 핫한 콘텐츠</p>
+                        </div>
+                    </a>
+
+                    <!-- Instagram Highlight -->
+                    <a href="https://www.instagram.com/reel/DXLKYEzEjSn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                        target="_blank" class="work-card">
+                        <div class="work-thumb thumb-ig" style="padding: 0; border: none; background: transparent;">
+                            <img src="assets/ig.jpg" alt="Instagram Highlight">
+                        </div>
+                        <div class="work-info">
+                            <h3 data-i18n="work_ig_title">인스타그램 인기 피드</h3>
+                            <p data-i18n="work_ig_desc">트렌디한 시각 효과로 시선을 사로잡은 게시물</p>
+                        </div>
+                    </a>
+
+                    <!-- Naver Blog Highlight -->
+                    <a href="https://blog.naver.com/rof0411/224242482229" target="_blank" class="work-card">
+                        <div class="work-thumb thumb-nb" style="padding: 0; border: none; background: transparent;">
+                            <img src="assets/nb.jpg" alt="Naver Blog Highlight">
+                        </div>
+                        <div class="work-info">
+                            <h3 data-i18n="work_nb_title">네이버 블로그 리뷰</h3>
+                            <p data-i18n="work_nb_desc">가장 활발한 소통이 이루어진 유익한 정보글</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section grey-bg">
+            <div class="container fade-in">
+                <div class="contact-header text-center">
+                    <h2 data-i18n="contact_title">Contact</h2>
+                    <p data-i18n="contact_subdesc">궁금한 점이 있으신가요? 편하게 남겨주시면 빠른 시간 내 답변 드리겠습니다.</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-left">
+                        <div class="contact-info-block">
+                            <h3 data-i18n="contact_value_title">가치관 혹은 소통</h3>
+                            <hr class="contact-divider">
+                            <p data-i18n="contact_value_desc">따뜻한 이야기와 영감을 함께 나눌 <br>멋진 제안을 기다립니다.</p>
+                        </div>
+                        <div class="contact-info-block mt-4">
+                            <h3 class="gold-text">Email</h3>
+                            <p>qlcsk0411@naver.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form class="contact-form" action="mailto:qlcsk0411@naver.com" method="post"
+                            enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="이름" required
+                                        data-i18n-placeholder="contact_name_ph">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="이메일" required
+                                        data-i18n-placeholder="contact_email_ph">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea id="message" name="message" placeholder="어떤 이야기를 나누고 싶으신가요?" required
+                                    data-i18n-placeholder="contact_message_ph"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn" data-i18n="contact_line_submit">메시지 보내기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 BITNA Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Language Translation Script -->
+    <script src="lang.js"></script>
+
+    <!-- Animations Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+
+    </script>
+</body>
+
+</html>
